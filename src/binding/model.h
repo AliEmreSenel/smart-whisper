@@ -2,7 +2,7 @@
 #define _GUARD_SW_MODEL_H
 
 #include "common.h"
-#include "whisper.h"
+#include <whisper.h>
 
 class WhisperModel : public Napi::ObjectWrap<WhisperModel> {
    public:

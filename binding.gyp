@@ -14,7 +14,7 @@
       ],
       "libraries": [ "<!@(node -p \"require('./dist/build.js').libraries\")" ],
       'defines': [ "<!@(node -p \"require('./dist/build.js').defines\")" ],
-      'include_dirs': ["<!@(node -p \"require('node-addon-api').include\")", "whisper.cpp", "whisper.cpp/examples"],
+      'include_dirs': ["<!@(node -p \"require('node-addon-api').include\")"],
       'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"],
       'cflags!': [ '-fno-exceptions' ],
       'cflags_cc!': [ '-fno-exceptions' ],

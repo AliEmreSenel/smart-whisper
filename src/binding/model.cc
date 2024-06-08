@@ -99,7 +99,7 @@ Napi::Value WhisperModel::Load(const Napi::CallbackInfo &info) {
 
     std::string model_path = info[0].As<Napi::String>();
 
-    whisper_context_params params;
+    whisper_context_params params = whisper_context_default_params();
     params.use_gpu = info.Length() == 2 ? info[1].As<Napi::Boolean>() : true;
 
     auto worker = new LoadModelWorker(env, model_path, params);
