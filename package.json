@@ -24,7 +24,6 @@
 		"whisper.cpp/LICENSE"
 	],
 	"scripts": {
-		"prepare": "husky install",
 		"format": "prettier --ignore-path .gitignore --write .",
 		"build": "tsup && node-gyp rebuild",
 		"install": "node-gyp rebuild",
